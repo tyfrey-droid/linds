@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sister Brief — Week of July 18–24, 2026</title>
+<script>
+(function(){
+  try {
+    var t = localStorage.getItem('brief-theme');
+    if (t !== 'light' && t !== 'dark') t = 'dark';
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root[data-theme="dark"]{
+    --bg:#14140f; --surface:#1c1c18; --text:#ebe9e2; --muted:#9a9890;
+    --rule:#33332c; --link:#8ab4f8; --link-hover:#f0a5b0; --body-text:#d8d6cf;
+  }
+  :root[data-theme="light"]{
+    --bg:#f5f4f0; --surface:#ffffff; --text:#1a1a18; --muted:#6b6b66;
+    --rule:#d8d7d2; --link:#1a3a8f; --link-hover:#c41230; --body-text:#1a1a18;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg); color:var(--body-text);
+    font-family:'IBM Plex Sans',sans-serif; font-weight:400;
+    font-size:1.125rem; line-height:1.7;
+    transition:background-color .25s ease, color .25s ease;
+  }
+  .wrap{padding:0 1.25rem 3rem;}
+  header.masthead{
+    border-bottom:2px solid var(--rule);
+    padding:1.75rem 0 1.25rem;
+    margin-bottom:0.5rem;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace; font-weight:500;
+    font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase;
+    color:var(--muted);
+  }
+  .issue-title{
+    font-weight:300; font-size:1.9rem; color:var(--text);
+    margin:0.4rem 0 0.9rem; line-height:1.25;
+  }
+  .meta-row{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:1rem;
+  }
+  .gen-time{
+    font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--muted);
+  }
+  #theme-toggle{
+    font-family:'IBM Plex Mono',monospace; font-size:0.85rem; color:var(--muted);
+    background:none; border:1px solid var(--rule); border-radius:6px;
+    min-width:44px; min-height:44px; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    transition:background-color .25s ease, color .25s ease, border-color .25s ease;
+  }
+  #theme-toggle:hover{ color:var(--text); border-color:var(--muted); }
+
+  section.brief-section{ margin:2rem 0; }
+  h2.section-label{
+    font-family:'IBM Plex Mono',monospace; font-weight:500;
+    font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 0.75rem;
+  }
+  section.brief-section > hr{
+    border:none; border-top:1px solid var(--rule); margin:2rem 0;
+  }
+  ul.bullets{ list-style:none; margin:0; padding:0; }
+  ul.bullets li{ margin:0 0 1rem; padding-left:1.1rem; position:relative; }
+  ul.bullets li::before{
+    content:"–"; position:absolute; left:0; color:var(--muted);
+  }
+  ul.bullets li strong{ font-weight:600; color:var(--text); }
+  ul.bullets li em{ color:var(--muted); }
+  a{
+    color:var(--link); text-decoration:underline; text-underline-offset:3px;
+    text-decoration-thickness:1px;
+  }
+  a:hover, a:active{ color:var(--link-hover); }
+
+  blockquote{
+    border-top:1px solid var(--rule);
+    margin:2.5rem 0 1.5rem; padding-top:1.75rem;
+    font-style:italic; text-align:center; color:var(--muted);
+    font-weight:300; font-size:1.05rem; line-height:1.8;
+  }
+  blockquote br{ content:""; }
+
+  footer{
+    font-family:'IBM Plex Mono',monospace; font-size:0.72rem;
+    color:var(--muted); text-align:center; margin-top:1.5rem;
+  }
+
+  @media (min-width:700px){
+    .wrap{ max-width:720px; margin:0 auto; padding:0 1.5rem 3.5rem; }
+    header.masthead{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      padding:2.25rem 0 1.5rem;
+    }
+    .meta-row{ flex-direction:column; align-items:flex-end; gap:0.6rem; }
+    .issue-title{ margin:0.4rem 0 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div>
+    <div class="eyebrow">Weekly Brief</div>
+    <div class="issue-title">Week of July 18–24, 2026</div>
+  </div>
+  <div class="meta-row">
+    <span class="gen-time">Generated Fri, Jul 25, 2026 · 6:00&nbsp;AM PT</span>
+    <button id="theme-toggle" aria-label="Toggle light and dark theme">☀</button>
+  </div>
+</header>
+
+<section class="brief-section">
+  <h2 class="section-label">👟 Sportswear Industry</h2>
+  <ul class="bullets">
+    <li><strong>Deckers beats estimates, raises guidance</strong> — Deckers Brands, parent of HOKA and UGG, reported first-quarter fiscal 2027 revenue of $1.02 billion (up 5.7%) and earnings of 94 cents per share, ahead of analyst estimates, and raised its full-year outlook. Investors read the modest size of the guidance raise as a caution sign for the sector — Adidas and Puma shares dipped in European trading the next morning. (<a href="https://ir.deckers.com/news-events/press-releases/detail/661/deckers-brands-reports-first-quarter-fiscal-year-2027-financial-results">Deckers Brands</a>, <a href="https://www.investing.com/news/stock-market-news/adidas-puma-slip-as-deckers-modest-guidance-raise-disappoints-investors-4810932">Investing.com</a>)</li>
+    <li><strong>Tariff regime shifts under apparel</strong> — The 10% Section 122 import surcharge expired July 24, but USTR immediately moved to impose new Section 301 tariffs — 10% to 12.5% — on 60 economies tied to forced-labor import enforcement, leaving apparel importers only a brief window before new duties took hold. The uncertainty over rates has been pressuring sourcing decisions across the industry all month. (<a href="https://www.fibre2fashion.com/news/apparel-news/us-apparel-importers-face-brief-tariff-window-before-section-301-311987-newsdetails.htm">Fibre2Fashion</a>, <a href="https://www.fibre2fashion.com/news/textile-news/us-imposes-forced-labour-tariffs-on-60-economies-312045-newsdetails.htm">Fibre2Fashion</a>)</li>
+    <li><strong>Puma names first e-commerce VP</strong> — Puma appointed Dusan Hamlin, a longtime Adidas and Reebok digital executive, to the newly created role of Vice President of E-Commerce, reporting to chief commercial officer Matthias Bäumer. The hire follows Puma's move to split its direct-to-consumer business into separate global retail and e-commerce units. (<a href="https://about.puma.com/en/newsroom/corporate-news/2026/22-07-2026-puma-appoints-dusan-hamlin-vice-president-e-commerce">PUMA</a>, <a href="https://wwd.com/footwear-news/shoe-industry-news/puma-dusan-hamlin-vice-president-e-commerce-business-1239079148/">WWD</a>)</li>
+  </ul>
+</section>
+
+<hr>
+
+<section class="brief-section">
+  <h2 class="section-label">🤝 Community Impact &amp; CSR</h2>
+  <ul class="bullets">
+    <li><strong>New Balance donates shuttered factory</strong> — Voters in Norridgewock, Maine approved accepting the donation of a 7.4-acre former New Balance factory from the company, 180–143. New Balance will also cover an estimated $200,000–$225,000 in annual upkeep for two years while the town lines up redevelopment funding, including federal earmarks. (<a href="https://www.centralmaine.com/2026/07/20/norridgewock-voters-ok-accepting-donation-of-new-balance-factory/">Central Maine</a>)</li>
+    <li><strong>adidas Foundation opens crisis-recovery partnership search</strong> — The adidas Foundation launched a global search for one to three strategic partner organizations to help design and run a new multi-year "Recovery Through Sport" program supporting children and youth affected by crisis and displacement, backed by a total funding commitment of €6 million. (<a href="https://www.adidasfoundation.org/rfp/expression-of-interest-recovery-through-sport">adidas Foundation</a> — foundation announcement)</li>
+  </ul>
+</section>
+
+<hr>
+
+<section class="brief-section">
+  <h2 class="section-label">🌲 Portland</h2>
+  <ul class="bullets">
+    <li><strong>Portland Fire pushes Moda Center funding</strong> — Portland's WNBA team publicly weighed in for the first time on the Moda Center renovation fight, with its president telling Multnomah County commissioners the county should approve its full $101 million share of the roughly $600 million overhaul. A competing amendment would cut the county's commitment to about $65 million; the team says current locker rooms and training facilities weren't built to support a second pro franchise. (<a href="https://www.opb.org/article/2026/07/23/portland-fire-wnba-pushes-multnomah-county-invest-moda-center-renovations/">OPB</a>)</li>
+    <li><strong>PSU finalizes layoffs, two closures</strong> — Portland State University announced its final retrenchment plan: closing the University Studies and Conflict Resolution departments and cutting 36 full-time positions, as it works to close a $35 million two-year budget shortfall. The faculty union says it will continue pushing back on the cuts. (<a href="https://www.opb.org/article/2026/07/21/portland-state-university-layoffs-oregon-education/">OPB</a>, <a href="https://www.insidehighered.com/news/business/cost-cutting/2026/07/21/portland-state-will-lay-36-employees-close-2-departments">Inside Higher Ed</a>)</li>
+    <li><strong>Preschool for All's outlook improves</strong> — New Portland State Population Research Center estimates presented to Multnomah County commissioners show the county's universal preschool program will need roughly 3,000 fewer seats than originally planned — about 8,000 versus 11,200 by 2030 — meaningfully brightening the program's long-term financial picture. (<a href="https://www.wweek.com/news/schools/2026/07/21/preschool-for-all-needs-3000-fewer-seats-than-expected/">Willamette Week</a>)</li>
+  </ul>
+</section>
+
+<blockquote>
+  “Cheap grace is the deadly enemy of our church. We are fighting today for costly grace.”<br>
+  — Dietrich Bonhoeffer, <em>The Cost of Discipleship</em>
+</blockquote>
+
+<footer>Weekly Brief · July 25, 2026 · Sources are primary news and trade outlets</footer>
+
+</div>
+<script>
+(function(){
+  var btn = document.getElementById('theme-toggle');
+  function apply(theme){
+    document.documentElement.setAttribute('data-theme', theme);
+    btn.textContent = theme === 'dark' ? '☀' : '☾';
+  }
+  var current = document.documentElement.getAttribute('data-theme') || 'dark';
+  apply(current);
+  btn.addEventListener('click', function(){
+    var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    apply(next);
+    try { localStorage.setItem('brief-theme', next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>

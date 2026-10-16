@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sister Brief — Week of October 9 – 15, 2026</title>
+<script>
+(function(){
+  try {
+    var t = localStorage.getItem('brief-theme');
+    if (t !== 'light' && t !== 'dark') t = 'dark';
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root[data-theme="dark"]{
+    --bg:#14140f; --surface:#1c1c18; --text:#ebe9e2; --muted:#9a9890;
+    --rule:#33332c; --link:#8ab4f8; --link-hover:#f0a5b0; --body-text:#d8d6cf;
+  }
+  :root[data-theme="light"]{
+    --bg:#f5f4f0; --surface:#ffffff; --text:#1a1a18; --muted:#6b6b66;
+    --rule:#d8d7d2; --link:#1a3a8f; --link-hover:#c41230; --body-text:#1a1a18;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg); color:var(--body-text);
+    font-family:'IBM Plex Sans',sans-serif; font-weight:400;
+    font-size:1.125rem; line-height:1.7;
+    transition:background-color .25s ease, color .25s ease;
+  }
+  .wrap{padding:0 1.25rem 3rem;}
+  header.masthead{
+    border-bottom:2px solid var(--rule);
+    padding:1.75rem 0 1.25rem;
+    margin-bottom:0.5rem;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace; font-weight:500;
+    font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase;
+    color:var(--muted);
+  }
+  .issue-title{
+    font-weight:300; font-size:1.9rem; color:var(--text);
+    margin:0.4rem 0 0.9rem; line-height:1.25;
+  }
+  .meta-row{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:1rem;
+  }
+  .gen-time{
+    font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--muted);
+  }
+  #theme-toggle{
+    font-family:'IBM Plex Mono',monospace; font-size:0.85rem; color:var(--muted);
+    background:none; border:1px solid var(--rule); border-radius:6px;
+    min-width:44px; min-height:44px; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    transition:background-color .25s ease, color .25s ease, border-color .25s ease;
+  }
+  #theme-toggle:hover{ color:var(--text); border-color:var(--muted); }
+
+  section.brief-section{ margin:2rem 0; }
+  h2.section-label{
+    font-family:'IBM Plex Mono',monospace; font-weight:500;
+    font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 0.75rem;
+  }
+  section.brief-section > hr{
+    border:none; border-top:1px solid var(--rule); margin:2rem 0;
+  }
+  ul.bullets{ list-style:none; margin:0; padding:0; }
+  ul.bullets li{ margin:0 0 1rem; padding-left:1.1rem; position:relative; }
+  ul.bullets li::before{
+    content:"–"; position:absolute; left:0; color:var(--muted);
+  }
+  ul.bullets li strong{ font-weight:600; color:var(--text); }
+  ul.bullets li em{ color:var(--muted); }
+  a{
+    color:var(--link); text-decoration:underline; text-underline-offset:3px;
+    text-decoration-thickness:1px;
+  }
+  a:hover, a:active{ color:var(--link-hover); }
+
+  blockquote{
+    border-top:1px solid var(--rule);
+    margin:2.5rem 0 1.5rem; padding-top:1.75rem;
+    font-style:italic; text-align:center; color:var(--muted);
+    font-weight:300; font-size:1.05rem; line-height:1.8;
+  }
+  blockquote br{ content:""; }
+
+  footer{
+    font-family:'IBM Plex Mono',monospace; font-size:0.72rem;
+    color:var(--muted); text-align:center; margin-top:1.5rem;
+  }
+
+  @media (min-width:700px){
+    .wrap{ max-width:720px; margin:0 auto; padding:0 1.5rem 3.5rem; }
+    header.masthead{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      padding:2.25rem 0 1.5rem;
+    }
+    .meta-row{ flex-direction:column; align-items:flex-end; gap:0.6rem; }
+    .issue-title{ margin:0.4rem 0 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div>
+    <div class="eyebrow">Weekly Brief</div>
+    <div class="issue-title">Week of October 9 – 15, 2026</div>
+  </div>
+  <div class="meta-row">
+    <span class="gen-time">Generated Fri, Oct 16, 2026 · 6:00&nbsp;AM PT</span>
+    <button id="theme-toggle" aria-label="Toggle light and dark theme">☀</button>
+  </div>
+</header>
+
+<section class="brief-section">
+  <h2 class="section-label">👟 Sportswear Industry</h2>
+  <ul class="bullets">
+    <li><strong>Columbia revives the PDX carpet</strong> — Marking the 35th anniversary of its Helvetia fleece, Portland-based Columbia Sportswear released a limited-edition print based on Portland International Airport's iconic carpet pattern. The Helvetia II Half Snap Fleece went on member early-access sale Oct. 14 and public sale Oct. 15, both online and at select stores including Columbia's Portland flagship and its PDX airport location, which hosted a launch-day DJ; the company says it's the first in an ongoing series of limited-edition collaborations. (<a href="https://portlandtribune.com/2026/10/13/you-can-have-your-pdx-carpet-and-wear-it-too-columbia-turns-portlands-airport-icon-into-a-fleece/">Portland Tribune</a>, <a href="https://www.kptv.com/2026/10/13/columbia-marks-35-years-helvetia-fleece-with-pdx-carpet-design/">KPTV</a>)</li>
+    <li><strong>Outdoor footwear sales slip as prices climb</strong> — A Q2 2026 Outdoor Industry Association retail-trends report found outdoor footwear unit sales fell 7.4% year-over-year even as average prices rose 9.8% to $75.62, with price increases masking a real volume decline. WWD ties the pullback to financial strain on 18-to-34-year-old shoppers facing high housing, food and fuel costs. (<a href="https://wwd.com/footwear-news/shoe-industry-news/outdoor-footwear-second-quarter-2026-dollars-units-sales-1239342780/">WWD</a>)</li>
+    <li><strong>AAFA targets counterfeit marketplaces</strong> — The American Apparel &amp; Footwear Association asked the U.S. Trade Representative to add Facebook, Instagram, Alibaba.com, AliExpress and DHgate to its 2026 Notorious Markets review, citing industry testing of 39 counterfeit products that found 41% failed safety standards, with at least a quarter of those failures traced to Meta-owned platforms. (<a href="https://ipwatchdog.com/2026/10/11/apparel-footwear-association-urges-ustr-list-us-platforms-2026-notorious-markets-report/">IPWatchdog</a>)</li>
+    <li><strong>H&amp;M investigates hacking claim</strong> — Hacking group ShinyHunters claimed to have accessed H&amp;M's inventory, logistics and store-infrastructure data, a claim surfacing shortly after a similar claimed breach at ASOS. H&amp;M said it had "no indication" its data had been compromised and is still assessing; a separate website outage days later was attributed by the company to routine maintenance, not an attack. (<a href="https://cybernews.com/security/h-m-investigates-data-breach-shinyhunters/">Cybernews</a>, <a href="https://us.fashionnetwork.com/news/H-m-investigates-reports-of-cyberattack,1875129.html">FashionNetwork</a>)</li>
+    <li><strong>Bangladesh preps for EU traceability rules</strong> — Industry analysis argues Bangladesh's garment sector, long trusted for compliance, must now prove it can supply the digital traceability data the EU's incoming Digital Product Passport will require, with a "basic" passport mandatory for apparel entering the EU by 2027. Separately, the Bangladesh Garment Manufacturers and Exporters Association reported exports to non-traditional markets grew 9.4% year-over-year to $1.81 billion in the third quarter, as some U.S. buyers shift orders amid tariff uncertainty elsewhere. (<a href="https://www.textiletoday.com.bd/a-passport-for-every-shirt-is-bangladeshs-apparel-industry-ready">Textile Today</a>)</li>
+  </ul>
+</section>
+
+<hr>
+
+<section class="brief-section">
+  <h2 class="section-label">🌲 Portland</h2>
+  <ul class="bullets">
+    <li><strong>Kotek urges PPS to slow down</strong> — As Portland Public Schools' board weighed its narrowed closure scenarios, Gov. Tina Kotek sent a letter Oct. 14 to Superintendent Kimberlee Armstrong and board chair Eddie Wang urging more "transparency, accessibility and listening" before a final decision, without asking the district to withdraw its plans. The board indicated it has little room left to change the proposals, and that any further edit would only remove a school from the list, not add one. (<a href="https://www.opb.org/article/2026/10/14/portland-public-schools-oregon-edcuation-school-closures/">OPB</a>, <a href="https://www.wweek.com/news/2026/10/14/murmurs-school-board-vows-not-to-add-more-schools-to-closure-lists">Willamette Week</a>)</li>
+    <li><strong>Nov. 3 ballot takes shape</strong> — With Portland's election five weeks out, Axios previewed the ballot: 21 candidates for three District 3 council seats, 12 for three District 4 seats, all six incumbents running again, and Measure 26-267 — a charter amendment letting residents help decide how to spend 2% of the city's discretionary budget — as the only citywide question. Willamette Week's fall endorsement board, meanwhile, ranked Shannon Singleton first among three major candidates for Multnomah County chair. (<a href="https://www.axios.com/local/portland/2026/10/14/2026-election-voter-guide-races-ballot-measure">Axios</a>, <a href="https://www.wweek.com/news/2026/10/14/wws-fall-2026-endorsements-multnomah-county/">Willamette Week</a>)</li>
+    <li><strong>Advocates report ICE arrest uptick</strong> — The Portland Immigrant Rights Coalition said its hotline confirmed at least nine ICE detentions in a single day across Gresham, Troutdale and eastern Portland, a rise the group's director described as more "emboldened" enforcement, though no link to a specific policy change was identified. The figures come from the advocacy group's own tracking, not official federal data. (<a href="https://www.opb.org/article/2026/10/09/think-out-loud-increase-ice-arrests-portland-area">OPB</a>)</li>
+  </ul>
+</section>
+
+<blockquote>
+  "We must learn to regard people less in the light of what they do or omit to do, and more in the light of what they suffer."<br>
+  — Dietrich Bonhoeffer, <em>Letters and Papers from Prison</em>
+</blockquote>
+
+<footer>Weekly Brief · October 16, 2026 · Sources are primary news and trade outlets</footer>
+
+</div>
+<script>
+(function(){
+  var btn = document.getElementById('theme-toggle');
+  function apply(theme){
+    document.documentElement.setAttribute('data-theme', theme);
+    btn.textContent = theme === 'dark' ? '☀' : '☾';
+  }
+  var current = document.documentElement.getAttribute('data-theme') || 'dark';
+  apply(current);
+  btn.addEventListener('click', function(){
+    var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    apply(next);
+    try { localStorage.setItem('brief-theme', next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>

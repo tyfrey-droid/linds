@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sister Brief — Week of October 23 – 29, 2026</title>
+<script>
+(function(){
+  try {
+    var t = localStorage.getItem('brief-theme');
+    if (t !== 'light' && t !== 'dark') t = 'dark';
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root[data-theme="dark"]{
+    --bg:#14140f; --surface:#1c1c18; --text:#ebe9e2; --muted:#9a9890;
+    --rule:#33332c; --link:#8ab4f8; --link-hover:#f0a5b0; --body-text:#d8d6cf;
+  }
+  :root[data-theme="light"]{
+    --bg:#f5f4f0; --surface:#ffffff; --text:#1a1a18; --muted:#6b6b66;
+    --rule:#d8d7d2; --link:#1a3a8f; --link-hover:#c41230; --body-text:#1a1a18;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg); color:var(--body-text);
+    font-family:'IBM Plex Sans',sans-serif; font-weight:400;
+    font-size:1.125rem; line-height:1.7;
+    transition:background-color .25s ease, color .25s ease;
+  }
+  .wrap{padding:0 1.25rem 3rem;}
+  header.masthead{
+    border-bottom:2px solid var(--rule);
+    padding:1.75rem 0 1.25rem;
+    margin-bottom:0.5rem;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace; font-weight:500;
+    font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase;
+    color:var(--muted);
+  }
+  .issue-title{
+    font-weight:300; font-size:1.9rem; color:var(--text);
+    margin:0.4rem 0 0.9rem; line-height:1.25;
+  }
+  .meta-row{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:1rem;
+  }
+  .gen-time{
+    font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--muted);
+  }
+  #theme-toggle{
+    font-family:'IBM Plex Mono',monospace; font-size:0.85rem; color:var(--muted);
+    background:none; border:1px solid var(--rule); border-radius:6px;
+    min-width:44px; min-height:44px; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    transition:background-color .25s ease, color .25s ease, border-color .25s ease;
+  }
+  #theme-toggle:hover{ color:var(--text); border-color:var(--muted); }
+
+  section.brief-section{ margin:2rem 0; }
+  h2.section-label{
+    font-family:'IBM Plex Mono',monospace; font-weight:500;
+    font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 0.75rem;
+  }
+  section.brief-section > hr{
+    border:none; border-top:1px solid var(--rule); margin:2rem 0;
+  }
+  ul.bullets{ list-style:none; margin:0; padding:0; }
+  ul.bullets li{ margin:0 0 1rem; padding-left:1.1rem; position:relative; }
+  ul.bullets li::before{
+    content:"–"; position:absolute; left:0; color:var(--muted);
+  }
+  ul.bullets li strong{ font-weight:600; color:var(--text); }
+  ul.bullets li em{ color:var(--muted); }
+  a{
+    color:var(--link); text-decoration:underline; text-underline-offset:3px;
+    text-decoration-thickness:1px;
+  }
+  a:hover, a:active{ color:var(--link-hover); }
+
+  blockquote{
+    border-top:1px solid var(--rule);
+    margin:2.5rem 0 1.5rem; padding-top:1.75rem;
+    font-style:italic; text-align:center; color:var(--muted);
+    font-weight:300; font-size:1.05rem; line-height:1.8;
+  }
+  blockquote br{ content:""; }
+
+  footer{
+    font-family:'IBM Plex Mono',monospace; font-size:0.72rem;
+    color:var(--muted); text-align:center; margin-top:1.5rem;
+  }
+
+  @media (min-width:700px){
+    .wrap{ max-width:720px; margin:0 auto; padding:0 1.5rem 3.5rem; }
+    header.masthead{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      padding:2.25rem 0 1.5rem;
+    }
+    .meta-row{ flex-direction:column; align-items:flex-end; gap:0.6rem; }
+    .issue-title{ margin:0.4rem 0 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div>
+    <div class="eyebrow">Weekly Brief</div>
+    <div class="issue-title">Week of October 23 – 29, 2026</div>
+  </div>
+  <div class="meta-row">
+    <span class="gen-time">Generated Fri, Oct 30, 2026 · 6:00&nbsp;AM PT</span>
+    <button id="theme-toggle" aria-label="Toggle light and dark theme">☀</button>
+  </div>
+</header>
+
+<section class="brief-section">
+  <h2 class="section-label">👟 Sportswear Industry</h2>
+  <ul class="bullets">
+    <li><strong>Columbia posts strong Q3 beat</strong> — Columbia Sportswear, headquartered in Portland, reported third-quarter net sales up 2% to $962.6 million and diluted EPS of $1.66, sharply ahead of the $67.4 million operating income (7.1% of sales) posted a year earlier when prAna and Mountain Hardwear impairment charges weighed on results; this quarter's operating income reached $109.6 million (11.4% of sales). The company raised the low end of its full-year EPS guidance to $4.65–$4.90, even as roughly $30 million in wholesale shipments shifted from the third quarter into the fourth. (<a href="https://www.sec.gov/Archives/edgar/data/0001050797/000105079726000148/colmfy26q3exhibit991.htm">SEC filing</a>)</li>
+    <li><strong>Crocs raises outlook a third time</strong> — Crocs reported third-quarter revenue up 4.6% to $1.04 billion and net income of $216.8 million ($4.52 diluted EPS), against $145.8 million ($2.70) a year earlier, with gross margin boosted in part by IEEPA tariff refunds. HEYDUDE returned to growth with revenue up 6%, and the company raised its full-year enterprise revenue outlook for the third straight quarter while buying back $250 million in stock. (<a href="https://www.sec.gov/Archives/edgar/data/0001334036/000133403626000058/croxq32026-pressrelease.htm">SEC filing</a>)</li>
+  </ul>
+</section>
+
+<hr>
+
+<section class="brief-section">
+  <h2 class="section-label">🤝 Community Impact &amp; CSR</h2>
+  <ul class="bullets">
+    <li><strong>Airbnb commits $500M to housing</strong> — Starting Wednesday, Airbnb began directing 10 cents from every booked stay, excluding cancellations, to its nonprofit Airbnb.org, aiming to raise $500 million over five years toward a goal of providing 1 million free nights of emergency and disaster housing a year by year five — up from roughly 100,000 nights this year. The company says the money comes from its own share of booking revenue, with no added cost to guests or hosts. (<a href="https://skift.com/?p=845713">Skift</a>, <a href="https://www.phocuswire.com/news/online/airbnb-to-fund-its-nonprofit-with-share-of-stay-revenue">PhocusWire</a>)</li>
+  </ul>
+</section>
+
+<hr>
+
+<section class="brief-section">
+  <h2 class="section-label">🌲 Portland</h2>
+  <ul class="bullets">
+    <li><strong>School closure protests escalate</strong> — Families packed a regional meeting at Jefferson High School and rode bikes across the St. Johns Bridge on Oct. 24 to oppose Portland Public Schools' proposed closure of up to 14 schools. OPB reported that Portland and Salem-Keizer are pursuing parallel closure plans that could shutter a combined 20 schools between the two districts, driven by budget gaps of $65 million and $46 million respectively; Portland's board votes in December. (<a href="https://www.kptv.com/2026/10/25/families-protest-portland-school-closures-district-meeting-st-johns-bridge-bike-ride/">KPTV</a>, <a href="https://www.opb.org/article/2026/10/27/oregon-portland-public-schools-salem-keizer/">OPB</a>)</li>
+    <li><strong>Council bans guns in city buildings</strong> — Portland City Council voted 12-0 Wednesday to end the concealed-handgun-license exemption for City Hall, the Portland Building and the 1900 Building, relying on authority granted by last year's Senate Bill 243. The city will post signage at the affected entrances and give notice and a chance to comply before referring violations to law enforcement. (<a href="https://katu.com/news/local/portland-city-council-votes-to-bar-guns-from-city-hall-ends-concealed-carry-exemption-chl-oregon-firearms-gun-buildings">KATU</a>, <a href="https://www.kptv.com/2026/10/28/portland-council-bans-concealed-guns-city-buildings/">KPTV</a>)</li>
+  </ul>
+</section>
+
+<blockquote>
+  "Work is as much a basic human need as food, beauty, rest, friendship, prayer, and sexuality; it's part of what it means to be human, made in God's image."<br>
+  — Tim Keller, <em>Every Good Endeavor</em>
+</blockquote>
+
+<footer>Weekly Brief · October 30, 2026 · Sources are primary news and trade outlets</footer>
+
+</div>
+<script>
+(function(){
+  var btn = document.getElementById('theme-toggle');
+  function apply(theme){
+    document.documentElement.setAttribute('data-theme', theme);
+    btn.textContent = theme === 'dark' ? '☀' : '☾';
+  }
+  var current = document.documentElement.getAttribute('data-theme') || 'dark';
+  apply(current);
+  btn.addEventListener('click', function(){
+    var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    apply(next);
+    try { localStorage.setItem('brief-theme', next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>

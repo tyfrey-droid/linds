@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sister Brief — Week of November 6 – 12, 2026</title>
+<script>
+(function(){
+  try {
+    var t = localStorage.getItem('brief-theme');
+    if (t !== 'light' && t !== 'dark') t = 'dark';
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root[data-theme="dark"]{
+    --bg:#14140f; --surface:#1c1c18; --text:#ebe9e2; --muted:#9a9890;
+    --rule:#33332c; --link:#8ab4f8; --link-hover:#f0a5b0; --body-text:#d8d6cf;
+  }
+  :root[data-theme="light"]{
+    --bg:#f5f4f0; --surface:#ffffff; --text:#1a1a18; --muted:#6b6b66;
+    --rule:#d8d7d2; --link:#1a3a8f; --link-hover:#c41230; --body-text:#1a1a18;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg); color:var(--body-text);
+    font-family:'IBM Plex Sans',sans-serif; font-weight:400;
+    font-size:1.125rem; line-height:1.7;
+    transition:background-color .25s ease, color .25s ease;
+  }
+  .wrap{padding:0 1.25rem 3rem;}
+  header.masthead{
+    border-bottom:2px solid var(--rule);
+    padding:1.75rem 0 1.25rem;
+    margin-bottom:0.5rem;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace; font-weight:500;
+    font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase;
+    color:var(--muted);
+  }
+  .issue-title{
+    font-weight:300; font-size:1.9rem; color:var(--text);
+    margin:0.4rem 0 0.9rem; line-height:1.25;
+  }
+  .meta-row{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:1rem;
+  }
+  .gen-time{
+    font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--muted);
+  }
+  #theme-toggle{
+    font-family:'IBM Plex Mono',monospace; font-size:0.85rem; color:var(--muted);
+    background:none; border:1px solid var(--rule); border-radius:6px;
+    min-width:44px; min-height:44px; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    transition:background-color .25s ease, color .25s ease, border-color .25s ease;
+  }
+  #theme-toggle:hover{ color:var(--text); border-color:var(--muted); }
+
+  section.brief-section{ margin:2rem 0; }
+  h2.section-label{
+    font-family:'IBM Plex Mono',monospace; font-weight:500;
+    font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 0.75rem;
+  }
+  section.brief-section > hr{
+    border:none; border-top:1px solid var(--rule); margin:2rem 0;
+  }
+  ul.bullets{ list-style:none; margin:0; padding:0; }
+  ul.bullets li{ margin:0 0 1rem; padding-left:1.1rem; position:relative; }
+  ul.bullets li::before{
+    content:"–"; position:absolute; left:0; color:var(--muted);
+  }
+  ul.bullets li strong{ font-weight:600; color:var(--text); }
+  ul.bullets li em{ color:var(--muted); }
+  a{
+    color:var(--link); text-decoration:underline; text-underline-offset:3px;
+    text-decoration-thickness:1px;
+  }
+  a:hover, a:active{ color:var(--link-hover); }
+
+  blockquote{
+    border-top:1px solid var(--rule);
+    margin:2.5rem 0 1.5rem; padding-top:1.75rem;
+    font-style:italic; text-align:center; color:var(--muted);
+    font-weight:300; font-size:1.05rem; line-height:1.8;
+  }
+  blockquote br{ content:""; }
+
+  footer{
+    font-family:'IBM Plex Mono',monospace; font-size:0.72rem;
+    color:var(--muted); text-align:center; margin-top:1.5rem;
+  }
+
+  @media (min-width:700px){
+    .wrap{ max-width:720px; margin:0 auto; padding:0 1.5rem 3.5rem; }
+    header.masthead{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      padding:2.25rem 0 1.5rem;
+    }
+    .meta-row{ flex-direction:column; align-items:flex-end; gap:0.6rem; }
+    .issue-title{ margin:0.4rem 0 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div>
+    <div class="eyebrow">Weekly Brief</div>
+    <div class="issue-title">Week of November 6 – 12, 2026</div>
+  </div>
+  <div class="meta-row">
+    <span class="gen-time">Generated Fri, Nov 13, 2026 · 8:25&nbsp;AM PT</span>
+    <button id="theme-toggle" aria-label="Toggle light and dark theme">☀</button>
+  </div>
+</header>
+
+<section class="brief-section">
+  <h2 class="section-label">👟 Sportswear Industry</h2>
+  <ul class="bullets">
+    <li><strong>Lululemon adds two more executives</strong> — Lululemon named Ben Hallam, a former Four Seasons marketing executive, as its first chief brand officer effective Nov. 9, and ex-Boston Consulting Group partner Emily Sunderland as chief strategy officer effective Nov. 23, both joining CEO Heidi O'Neill's rebuilt leadership team. The hires follow this month's departures of longtime executives Nikki Neuburger and Ted Dagnese as O'Neill continues restructuring the company she took over in September. (<a href="https://www.retaildive.com/news/lululemon-fills-executive-roles-chief-brand-strategy-officer-heidi-oneill-turnaround-team/874204/">Retail Dive</a>, <a href="https://chainstoreage.com/lululemon-names-new-brand-strategy-chiefs-amid-leadership-shuffle">Chain Store Age</a>)</li>
+    <li><strong>On Holding posts record quarter</strong> — Swiss running-shoe maker On reported third-quarter net sales up 17.2% to a record CHF 931.4 million and net profit up 36.9% to CHF 162.8 million, as direct-to-consumer sales surged and a roughly CHF 53 million US tariff refund lifted gross margin to 72.6%. Management held its full-year growth guidance and said it expects sales growth to accelerate in the fourth quarter as the holiday season gets underway. (<a href="https://fashionunited.com/news/business/on-reports-record-revenue-in-third-quarter/2026111075660">FashionUnited</a>, <a href="https://sgbonline.com/ons-q3-profits-nearly-double-on-35-percent-currency-neutral-growth/">SGB Media</a>)</li>
+  </ul>
+</section>
+
+<hr>
+
+<section class="brief-section">
+  <h2 class="section-label">🤝 Community Impact &amp; CSR</h2>
+  <ul class="bullets">
+    <li><strong>Milliken sponsors veterans' exhibit</strong> — The Milliken &amp; Company Charitable Foundation committed $100,000 over four years to the Military Women's Memorial in Arlington, Virginia, becoming founding sponsor of a new uniform exhibit set to open alongside the memorial's 2027 renovation. <em>(company announcement)</em> (<a href="https://www.textileworld.com/textile-world/2026/11/milliken-company-charitable-foundation-commits-100000-to-military-womens-memorial-sponsoring-new-uniform-exhibit/">Textile World</a>)</li>
+    <li><strong>Carhartt commits $1M to hunger relief</strong> — Carhartt pledged $1 million split between The Farmlink Project, which moves surplus farm food to food banks including a pre-Thanksgiving Detroit distribution, and Feeding America, in a donation the company projects will provide 5 million meals tied to its Giving Tuesday campaign. (<a href="https://www.agnavigator.com/Article/2026/11/10/carhartt-fights-hunger-food-waste-with-1m-donation-this-holiday-season/">Ag Navigator</a>)</li>
+  </ul>
+</section>
+
+<hr>
+
+<section class="brief-section">
+  <h2 class="section-label">🌲 Portland</h2>
+  <ul class="bullets">
+    <li><strong>800 city workers walk off the job</strong> — Members of the City of Portland Professional Workers Union began an open-ended strike at 12:01 a.m. Monday after weekend mediation with the mayor's office broke down, with wages the core dispute after 10 months of bargaining; the city's latest offer paired a 3% cost-of-living raise with a smaller raise next July, short of what the union was asking for lower-paid workers. A second union was weighing whether to join, and no resolution had been reported by midweek. (<a href="https://www.opb.org/article/2026/11/09/portland-oregon-workers-strike-professional-workers-union/">OPB</a>, <a href="https://www.kptv.com/2026/11/09/800-portland-city-employees-strike-starting-monday/">KPTV</a>)</li>
+    <li><strong>Camping ban's first year: no convictions</strong> — A one-year review by OPB found Portland police have issued roughly 120 citations and charged 58 people under the city's public camping ban since enforcement began, with many charged more than once, but the ban has produced zero convictions. City data cited in the review shows more than 600 people accepted shelter in lieu of a citation. (<a href="https://opb.org/article/2026/11/10/portland-camping-ban-mayor-wilson-citations-arrestes">OPB</a>)</li>
+  </ul>
+</section>
+
+<blockquote>
+  "Faith is taking the first step even when you don't see the whole staircase."<br>
+  — Martin Luther King Jr.
+</blockquote>
+
+<footer>Weekly Brief · November 13, 2026 · Sources are primary news and trade outlets</footer>
+
+</div>
+<script>
+(function(){
+  var btn = document.getElementById('theme-toggle');
+  function apply(theme){
+    document.documentElement.setAttribute('data-theme', theme);
+    btn.textContent = theme === 'dark' ? '☀' : '☾';
+  }
+  var current = document.documentElement.getAttribute('data-theme') || 'dark';
+  apply(current);
+  btn.addEventListener('click', function(){
+    var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    apply(next);
+    try { localStorage.setItem('brief-theme', next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
